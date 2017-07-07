@@ -43,7 +43,7 @@ _This application is designed to allow the user to track the animals in their zo
   | User can view an individual instance of an animal and their details. | "Moon" | "Species: Arctic Fox, Name: Moon, Age: 2, Diet: Carnivore, Location: Northern Trail, Caretakers: 5, Sex: Female, Likes: Cool shade, Dislikes: Loud noises." |
   | User can create new instances of an animal. | "Add new Animal" | "Species: Wolverine, Name: James Howlett, Age: 137, Diet: Carnivore, Location: Canadian Wilderness, Caretakers: 616, Sex: Male, Likes: Cigars, Dislikes: Boundaries |
   | User can edit any instance of an animal. | "Name: James Howlett, EDIT" | "Name: Logan" |
-  | User can delete instances of an animal. | "Name: Moon, DELETE" | "This animal is no longer in this zoo" |
+  | (Stretch Goal) User can delete instances of an animal. | "Name: Moon, DELETE" | "This animal is no longer in this zoo" |
 
 3. Integration
   * index.html for application entry and navigation and viewing a list of all animals.
