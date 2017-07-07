@@ -1,5 +1,5 @@
 {
-  "name": "angular2-to-do",
+  "name": "local-zoo",
   "version": "1.0.0",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
@@ -8,7 +8,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w"
   },
-  "license": "MIT",
+  "license": "GPL-3.0",
   "dependencies": {
     "@angular/common": "2.4.0",
     "@angular/compiler": "2.4.0",
@@ -42,5 +42,16 @@
     "lite-server": "2.2.2",
     "typescript": "2.2.2",
     "typings": "1.3.2"
-  }
+  },
+  "description": "#### _{Brief description of application}, {Date of current version}_",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewlinn/local-zoo.git"
+  },
+  "author": "Andrew Dalton",
+  "bugs": {
+    "url": "https://github.com/drewlinn/local-zoo/issues"
+  },
+  "homepage": "https://github.com/drewlinn/local-zoo#readme"
 }
