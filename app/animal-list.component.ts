@@ -10,7 +10,7 @@ import { Animal } from './animal.model';
       <option value="2andOver">Animals 2 years and older</option>
     </select>
     <ul>
-      <li (click)="isYoung(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | age:filterByAge">{{{currentAnimal.name}} {currentAnimal.age}}
+      <li (click)="isYoung(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | age:filterByAge">{{currentAnimal.name}} {{currentAnimal.age}}
         <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
       </li>
     </ul>
