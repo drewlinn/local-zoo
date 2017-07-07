@@ -81,10 +81,12 @@ _If you find any bugs or other issues with my code, please contact me by emailin
 
   * HTML
   * Javascript
+  * Typescript
+  * Angular2
   * jQuery
   * CSS
   * SCSS
-  * Angular2
+  * Bootstrap
   * Node Package Manager
   * Bower
 
