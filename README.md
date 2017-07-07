@@ -1,22 +1,21 @@
-# _{Application Name}_
+# _Local Zoo_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _An application for tracking properties of the animals in a zoo, 07/07/17_
 
-#### By _**{Andrew Dalton}**_
+#### By _**Andrew Dalton**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This application is designed to allow the user to track the animals in their zoo. It will track a given animal's Species, Name, Age, Diet, Location within the zoo, the amount of Caretakers they need, their Sex, their Likes and their Dislikes. It will allow the user to View, Edit, Create new instances of an animal object and delete them. _
 
 ## Planning
 
 1. Configuration/dependencies
-  * This should include ALL dependencies.
 
-  * Install the following packages:
+  * Make sure that the following packages are properly installed before attempting to run this application.
 
     * Node Packages
-      * The following were implemented for use in our Development Environment
+      * The following were implemented for use in our Development Environment and are utilized through our gulpfile.js file.
         * gulp - allows us to run gulp commands on our project to ease the development process.
         * browser-sync - allows us to see our changes to our project as we save them.
         * browserify - makes our project browser compatible.
@@ -31,59 +30,66 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
         * bower-files - installs the necessary files on which our front-end package manager depends.
 
     * Bower Packages
-      * The following were implemented in our Production Environment
+      * The following were implemented in our Production Environment and are utilized in our project's styles and functionality.
         * jquery - simplifies HTML document traversing, event handling, animating, and Ajax interactions.
         * bootstrap - provides us with some rudimentary page styling tools.
         * moment.js - allows us to implement time and date related data.
 
-  * It should also include WHERE they are defined and used in the project
-  * It could include a short description of what each does for you
-
   2. Specifications
   | Behavior | Input | Output |
   | :--------| :---- | :------|
+  | User can view a list of all the animals in the zoo. | "application start" | "Moon, Prince, Tinkerbell" |
+  | User can filter the list of animals by their age. | "Animals over 2 years old" | "Moon, Prince, Tinkerbell" |
+  | User can view an individual instance of an animal and their details. | "Moon" | "Species: Arctic Fox, Name: Moon, Age: 2, Diet: Carnivore, Location: Northern Trail, Caretakers: 5, Sex: Female, Likes: Cool shade, Dislikes: Loud noises." |
+  | User can create new instances of an animal. | "Add new Animal" | "Species: Wolverine, Name: James Howlett, Age: 137, Diet: Carnivore, Location: Canadian Wilderness, Caretakers: 616, Sex: Male, Likes: Cigars, Dislikes: Boundaries |
+  | User can edit any instance of an animal. | "Name: James Howlett, EDIT" | "Name: Logan" |
+  | User can delete instances of an animal. | "Name: Moon, DELETE" | "This animal is no longer in this zoo" |
 
 3. Integration
-  * Initial routes or index pages with all dependencies in Controller/index.html head
-  * Template/html page for ...
-  * Template/html page for ...
-  * Template/html page for ... (one for each route/integrated user story)
-  * Display...
-  * Integrate feature that...
+  * index.html for application entry and navigation and viewing a list of all animals.
+  * animal.html page for viewing an individual animal.
+  * animal-new.html page for for adding a new instance of an animal.
+  * animal-edit.html page for modifying an existing animal's information.
+  * Integrate feature that deletes instances of an animal.
 
 4. UX/UI
-  * Include and modify bootstrap/materialize/Sass etc.
-  * Develop custom style
+  * Bootstrap, SASS
+  * Want to display animal images with given entries.
 
 5. Polish
   * Refactor minor portion of...
-  * Delete unused...
-  * Make README awesome
+  * Delete unused files and lines of code.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* Open your console or powershell command line.
+* In your command line, navigate to the desktop or your desired folder destination.
+* Copy the project's github address (https://github.com/drewlinn/local-zoo.git)
+* Write in your console the command "git clone" and paste the project address afterward and press enter.
+* Perform 'npm install' and 'bower install' commands
+* Perform the commands 'gulp build' followed by 'gulp-serve' and the application should open in your default web browser.
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_None known at this time._
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_If you find any bugs or other issues with my code, please contact me by emailing expandrew@gmail.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+  * HTML
+  * Javascript
+  * jQuery
+  * CSS
+  * SCSS
+  * Angular2
+  * Node Package Manager
+  * Bower
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*This software is licensed under the GPL*
 
-Copyright (c) 2016 **_{Andrew Dalton, Epicodus}_**
+Copyright (c) 2016 **_Andrew Dalton, Epicodus_**
