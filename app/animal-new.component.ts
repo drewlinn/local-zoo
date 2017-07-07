@@ -5,7 +5,7 @@ import { Animal } from './animal.model';
   selector: 'animal-new',
   template: `
   <h1>New Animal</h1>
-  <div>
+  <div class="container">
     <label>Enter Animal Species:</label>
     <input #newSpecies>
     <label>Enter Animal Name:</label>
@@ -19,7 +19,11 @@ import { Animal } from './animal.model';
     <label>Enter Animal Caretakers:</label>
     <input #newCaretakers>
     <label>Enter Animal Sex:</label>
-    <input #newSex>
+    <select #newSex>
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+      <option value="other">Other</option>
+    </select>
     <label>Enter Animal Likes:</label>
     <input #newLikes>
     <label>Enter Animal Dislikes:</label>
