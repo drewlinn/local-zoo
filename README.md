@@ -71,7 +71,7 @@ _This application is designed to allow the user to track the animals in their zo
 
 ## Known Bugs
 
-_None known at this time._
+_MasterAnimalList does not display by default, but will display if "All Animals" is selected after having already selected either "2andOver" and "under2"._
 
 ## Support and contact details
 
