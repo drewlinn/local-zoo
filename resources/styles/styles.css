@@ -33,6 +33,14 @@ body, input[text], button {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-form {
-
+div#list, #edit, #new{
+  position: relative;;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 1000px;
+  height: 300px;
+  border-radius: 3px;
 }

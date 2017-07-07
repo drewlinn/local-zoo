@@ -4,11 +4,12 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'app-root',
   template: `
-   <div class="container">
-      <h1>Local Zoo Animal Tracker Application for Javascript Week 2 Code Review {{month}}/{{day}}/{{year}}</h1>
-      <h3>{{currentFocus}}</h3>
-      <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
+   <div class="container" id="title">
+      <h1>Kalima Zoo Animal Tracker {{month}}/{{day}}/{{year}}</h1>
       <hr>
+      <div class="container" id="list">
+        <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
+      </div>
       <animal-edit [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></animal-edit>
       <animal-new (newAnimalSender)="addAnimal($event)"></animal-new>
   </div>
@@ -16,7 +17,6 @@ import { Animal } from './animal.model';
 })
 
 export class AppComponent {
-  currentFocus: string = 'Angular Code Review';
   currentTime = new Date();
   month: number = this.currentTime.getMonth() + 1;
   day: number = this.currentTime.getDate();
