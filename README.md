@@ -1,12 +1,12 @@
 # _Local Zoo_
 
-#### _An application for tracking properties of the animals in a zoo, 07/07/17_
+#### An application for tracking properties of the animals in a zoo, 07/07/17
 
-#### By _**Andrew Dalton**_
+#### By **Andrew Dalton**
 
 ## Description
 
-_This application is designed to allow the user to track the animals in their zoo. It will track a given animal's Species, Name, Age, Diet, Location within the zoo, the amount of Caretakers they need, their Sex, their Likes and their Dislikes. It will allow the user to View, Edit, Create new instances of an animal object and delete them. _
+  This application is designed to allow the user to track the animals in their zoo. It will track a given animal's Species, Name, Age, Diet, Location within the zoo, the amount of Caretakers they need, their Sex, their Likes and their Dislikes. It will allow the user to View, Edit, and Create new instances of an animal object..
 
 ## Planning
 
@@ -18,20 +18,17 @@ _This application is designed to allow the user to track the animals in their zo
       * The following were implemented for use in our Development Environment and are utilized through our gulpfile.js file.
         * gulp - allows us to run gulp commands on our project to ease the development process.
         * browser-sync - allows us to see our changes to our project as we save them.
-        * browserify - makes our project browser compatible.
         * vinyl-source-stream - puts our browserified source code into a new file.
         * gulp-concat - concatenates our JS files into one.
         * gulp-uglify - consolidates our code into a form that is more easily digestible by the browser.
         * gulp-util - allows us to manage environment variables.
         * del - deletes all the files that are passed as arguments into the command.
-        * jshint - analyzes code and warns about parts that don't follow stylistic conventions, or could cause bugs in the future.
         * sass - translates our files into normal CSS .
         * sourcemaps - adds some code which allows us to see which Sass files are responsible for each CSS rule that we see in the browser.
         * bower-files - installs the necessary files on which our front-end package manager depends.
 
     * Bower Packages
       * The following were implemented in our Production Environment and are utilized in our project's styles and functionality.
-        * jquery - simplifies HTML document traversing, event handling, animating, and Ajax interactions.
         * bootstrap - provides us with some rudimentary page styling tools.
         * moment.js - allows us to implement time and date related data.
 
@@ -53,12 +50,7 @@ _This application is designed to allow the user to track the animals in their zo
   * Integrate feature that deletes instances of an animal.
 
 4. UX/UI
-  * Bootstrap, SASS
-  * Want to display animal images with given entries.
-
-5. Polish
-  * Refactor minor portion of...
-  * Delete unused files and lines of code.
+  * Bootstrap
 
 ## Setup/Installation Requirements
 
@@ -71,11 +63,11 @@ _This application is designed to allow the user to track the animals in their zo
 
 ## Known Bugs
 
-_MasterAnimalList does not display by default, but will display if "All Animals" is selected after having already selected either "2andOver" and "under2"._
+MasterAnimalList does not display by default, but will display if "All Animals" is selected after having already selected either "2andOver" and "under2". Working on a fix.
 
 ## Support and contact details
 
-_If you find any bugs or other issues with my code, please contact me by emailing expandrew@gmail.com_
+If you find any bugs or other issues with my code, please contact me by emailing expandrew@gmail.com
 
 ## Technologies Used
 
