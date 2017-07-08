@@ -4,15 +4,19 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'app-root',
   template: `
-   <div class="container" id="title">
+    <div class="container" id="title">
       <h1>Kalima Zoo Animal Tracker {{month}}/{{day}}/{{year}}</h1>
       <hr>
       <div class="container" id="list">
         <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
       </div>
-      <animal-edit [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></animal-edit>
-      <animal-new (newAnimalSender)="addAnimal($event)"></animal-new>
-  </div>
+      <div>
+        <animal-edit [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></animal-edit>
+      </div>
+      <div>
+        <animal-new (newAnimalSender)="addAnimal($event)"></animal-new>
+      </div>
+    </div>
   `
 })
 
