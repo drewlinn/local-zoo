@@ -33,6 +33,7 @@
         * moment.js - allows us to implement time and date related data.
 
   2. Specifications
+  
   | Behavior | Input | Output |
   | :--------| :---- | :------|
   | User can view a list of all the animals in the zoo. | "application start" | "Moon, Prince, Tinkerbell" |
